@@ -74,3 +74,65 @@ Use these labels:
 Prioritize correctness, stability, compatibility, data safety and maintainability.
 
 Do not claim that code has been tested unless actual testing has been performed.
+## 8. SOLIDWORKS TYPE LIBRARY & INTEROP LIBRARIES
+
+### 8.1. Main SolidWorks API
+
+File: sldworks.tlb
+
+Purpose:
+- SolidWorks API Type Library.
+- COM Interface definitions.
+- Method and Property information.
+- Data types and API structures.
+
+Usage:
+- Verify API interfaces.
+- Inspect method signatures.
+- Verify parameter types.
+- Investigate COM automation.
+
+### 8.2. SolidWorks Simulation
+
+File: SolidWorks.Interop.cosworks.dll
+
+Purpose:
+- SOLIDWORKS Simulation Interop.
+- Simulation API interfaces.
+- Simulation-related methods and properties.
+
+Usage:
+- Simulation automation.
+- Study and analysis operations.
+- Simulation object inspection.
+
+### 8.3. SolidWorks Constants
+
+File: SolidWorks.Interop.swconst.dll
+
+Purpose:
+- SolidWorks API enumerations.
+- API constants.
+- Document types.
+- Selection types.
+- Feature and configuration options.
+
+Usage:
+- Verify enum names.
+- Verify constant values.
+- Avoid inventing numeric constants.
+- Ensure correct API parameter values.
+
+### 8.4. Library Verification Rules
+
+For every library:
+- Record file name.
+- Record file version.
+- Record SolidWorks version.
+- Record file location.
+- Verify architecture where relevant.
+- Verify API compatibility.
+
+Never assume that a library from one SolidWorks version is identical to another.
+
+Do not claim that a DLL or TLB has been fully inspected unless its actual contents have been examined.
